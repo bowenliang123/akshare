@@ -1,0 +1,33 @@
+version: 0.0.1
+type: plugin
+author: bowenliang123
+name: akshare
+label:
+  en_US: akshare
+  ja_JP: akshare
+  zh_Hans: akshare
+  pt_BR: akshare
+description:
+  en_US: Tools for fetching financial data with AKShare from open source API
+  zh_Hans: Tools for fetching financial data with AKShare from open source API
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+plugins:
+  tools:
+    - provider/akshare.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-03-06T20:26:35.578652+08:00
+privacy: PRIVACY.md
+verified: false

@@ -1,0 +1,17 @@
+identity:
+  author: bowenliang123
+  name: akshare
+  label:
+    en_US: akshare
+    zh_Hans: akshare
+    pt_BR: akshare
+  description:
+    en_US: Tool for fetching financial info with AKShare from open source API
+    zh_Hans: Tool for fetching financial info with AKShare from open source API
+    pt_BR: Tool for fetching financial info with AKShare from open source API
+  icon: icon.svg
+tools:
+  - tools/akshare.yaml
+extra:
+  python:
+    source: provider/akshare.py
