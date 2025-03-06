@@ -11,7 +11,7 @@ identity:
     pt_BR: Tool for fetching financial info with AKShare from open source API
   icon: icon.svg
 tools:
-  - tools/akshare.yaml
+  - tools/stock_bid_ask_em.yaml
 extra:
   python:
     source: provider/akshare.py

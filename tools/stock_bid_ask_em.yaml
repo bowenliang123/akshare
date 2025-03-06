@@ -1,0 +1,26 @@
+identity:
+  name: stock_bid_ask_em
+  author: bowenliang123
+  label:
+    en_US: stock_bid_ask_em
+    zh_Hans: stock_bid_ask_em
+description:
+  human:
+    en_US: "Fetch single stock price, East Money-Quotation, Interface: stock_bid_ask_em"
+    zh_Hans: "获取单只股票的行情报价，东方财富-行情报价，接口: stock_bid_ask_em"
+  llm: Fetch single stock data with AKShare from East Money
+parameters:
+  - name: symbol
+    type: string
+    required: true
+    label:
+      en_US: Stock code of A-share market, e.g. 000776
+      zh_Hans: A股市场股票代码, 例如 000776
+    human_description:
+      en_US: Stock code of A-share market
+      zh_Hans: A股市场股票代码
+    llm_description: Stock code of A-share market, e.g. 000776
+    form: llm
+extra:
+  python:
+    source: tools/stock_bid_ask_em.py
